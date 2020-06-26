@@ -7,7 +7,7 @@
 -	Private variables cannot be directly accessed through object, we get an error if we do so
 -	Class level methods are needed which allow access to private variables
 
-```
+```python
 # Example 1:
 class Student:
     # Initialize private class field
@@ -60,7 +60,7 @@ print(stu_obj._Student__id) # Prints 12
 ### Decorators
 A decorator is a function that takes another function and extends the behavior of the latter function without explicitly modifying it
 
-```
+```python
 def greet(func):
     def wrapper_func(*args, **kwargs):
         print("Welcome,")
@@ -115,8 +115,7 @@ The class method takes the class as parameter to know about the state of that cl
 -	Dunder methods are a set of predefined methods you can use to enrich your classes
 -	Dunder methods let you emulate the behavior of built-in types. For example, to get the length of a string you can call len('string'). But an empty class definition doesn’t support this behavior out of the box:
 
-```
-
+```python
 class NoLenSupport:
     pass
 
@@ -125,7 +124,7 @@ len(obj)
 # TypeError: "object of type 'NoLenSupport' has no len()"
 ```
 
-```
+```python
 # To fix this, you can add a __len__ dunder method to your class:
 
 class LenSupport:
@@ -148,7 +147,7 @@ print(len(obj)) # print out len as 42
 -	After the except clause(s), you can include an else-clause. The code in the else-block executes if the code in the try: block does not raise an exception.
 -	The else-block is a good place for code that does not need the try: block's protection.
 
-```
+```python
 try:
     # You do your operations here
 
