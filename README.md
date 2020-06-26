@@ -40,7 +40,7 @@ print(stu_obj._Student__id) # Prints 12
 ### Inheritance
 -	Inheritance is the capability of one class to derive or inherit the properties from some another class
 -	Python supports single, multiple and multilevel inheritance
--	We can use super() to invoke constructor and method of parent class
+-	We can use `super()` to invoke constructor and method of parent class
 -	We can use in built issubclass() method to verify whether a particular class is a subclass of another class. Built-in function is issubclass(paramOne, paramTwo) where paramOne and paramTwo can be either class names or class's object name
 -	It is recommended to call the parent class constructor from the child class
 
@@ -76,7 +76,7 @@ show_info("Username")
 ```
 
 ### Generators
--	There is a lot of work in building an iterator in Python. We have to implement a class with __iter__() and __next__() method, keep track of internal states, and raise StopIteration exception, when there are no values to be returned
+-	There is a lot of work in building an iterator in Python. We have to implement a class with `__iter__()` and `__next__()` method, keep track of internal states, and raise StopIteration exception, when there are no values to be returned
 -	Python generators are a simple way of creating iterators. All the work we mentioned above are automatically handled by generators in Python.
 -	Simply speaking, a generator is a function that returns an object (iterator) which we can iterate over (one value at a time)
 -	It is fairly simple to create a generator in Python. It is as easy as defining a normal function, but with a yield statement instead of a return statement
@@ -90,17 +90,17 @@ show_info("Username")
 -	Abstract classes may not be instantiated, and require subclasses to provide implementations for the abstract methods
 -	Subclasses of an abstract class in Python are not required to implement abstract methods of the parent class
 -	Python provides a module abc to help in defining and implementing Abstract Base Classes
--	A class that is derived from an abstract class which in turn inherits from ABC, cannot be instantiated unless all of its abstract methods which are decorated with @abstractmethod are overridden
+-	A class that is derived from an abstract class which in turn inherits from ABC, cannot be instantiated unless all of its abstract methods which are decorated with `@abstractmethod` are overridden
 -	Abstract methods which are decorated, declared in base class, where base class inherits from ABC can be used to force implementation in the child classes inheriting from base class
 
 
 ### Class method vs Static method
 |Class Method	| Static Method|
 |---------------|--------------|
-|The class method takes cls (class) as first argument|	The static method does not take any specific parameter|
+|The class method takes `cls` (class) as first argument|	The static method does not take any specific parameter|
 Class method can access and modify the class state|	Static Method cannot access or modify the class state|
 The class method takes the class as parameter to know about the state of that class|	Static methods do not know about class state. These methods are used to do some utility tasks by taking some parameters|
-@classmethod decorator is used here|	@staticmethod decorator is used here|
+`@classmethod` decorator is used here|	`@staticmethod` decorator is used here|
 
 
 ### Comprehensions
@@ -137,10 +137,10 @@ print(len(obj)) # print out len as 42
 ```
 
 ### repr vs str
--	str() and repr() both are used to get a string representation of object
--	str() is used for creating output for end user while repr() is mainly used for debugging and development. 
--	repr’s goal is to be unambiguous and str’s is to be readable
--	repr() compute the “official” string representation of an object (a representation that has all information about the abject) and str() is used to compute the “informal” string representation of an object (a representation that is useful for printing the object)
+-	`str()` and `repr()` both are used to get a string representation of object
+-	`str()` is used for creating output for end user while repr() is mainly used for debugging and development. 
+-	`repr()` goal is to be unambiguous and str’s is to be readable
+-	`repr()` compute the “official” string representation of an object (a representation that has all information about the abject) and str() is used to compute the “informal” string representation of an object (a representation that is useful for printing the object)
 
 ### Exception handling
 -	A single try statement can have multiple except statements. This is useful when the try block contains statements that may throw different types of exceptions.
