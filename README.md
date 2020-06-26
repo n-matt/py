@@ -96,7 +96,6 @@ show_info("Username")
 
 ### Class method vs Static method
 |Class Method	| Static Method|
-
 |---------------|--------------|
 
 |The class method takes `cls` (class) as first argument|	The static method does not take any specific parameter|
